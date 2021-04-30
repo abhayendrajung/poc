@@ -5,8 +5,8 @@ import {FormService} from "../form.service"
 
 @Component({
   selector: 'app-deleat',
-  templateUrl: './deleat.component.html',
-  styleUrls: ['./deleat.component.scss']
+  templateUrl: './delete.component.html',
+  styleUrls: ['./delete.component.scss']
 })
 export class DeleatComponent implements OnInit {
 

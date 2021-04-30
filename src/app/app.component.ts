@@ -5,7 +5,7 @@ import { EntryComponent } from './entry/entry.component';
 import {EditComponent} from "./edit/edit.component"
 
 import{FormService } from "./form.service"
-import { DeleatComponent } from './deleat/deleat.component';
+import { DeleatComponent } from './delete/delete.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

@@ -8,7 +8,7 @@ import {MaterialModule} from "./material/material.module"
 import { EntryComponent } from './entry/entry.component'
 import {ReactiveFormsModule} from "@angular/forms";
 import { EditComponent } from './edit/edit.component';
-import { DeleatComponent } from './deleat/deleat.component'
+import { DeleatComponent } from './delete/delete.component'
 @NgModule({
   declarations: [
     AppComponent,
