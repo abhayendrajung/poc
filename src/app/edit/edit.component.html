@@ -1,0 +1,58 @@
+
+<div>
+  <h1 class="mainheading">Update the value here !!</h1>
+  <form [formGroup]="service.form">
+    <mat-grid-list cols="2" rowHeight="250px">
+      <div class="row">
+        <div class="col-6">
+          <label>Roll Number</label> <br />
+          <input
+            type="number"
+            formControlName="roll"
+            placeholder="roll number"
+            class="right"
+          required
+          /><br />
+          <label> Name</label><br />
+          <input
+            type="text"
+            formControlName="name"
+            placeholder="Name"
+            class="right"
+            required
+          /><br />
+          <label> Maths</label><br />
+          <input
+            type="number"
+            formControlName="maths"
+            placeholder="Maths"
+            class="right"
+            required
+          /><br />
+        </div>
+        <div class="col-6">
+          <label>English</label><br />
+          <input
+            type="number"
+            formControlName="english"
+            placeholder="English"
+            class="left"
+            required
+          /><br />
+          <label> Date</label><br />
+          <input
+            type="date"
+            formControlName="date"
+            placeholder="Date"
+            class="left"
+            required
+          /><br />
+        </div>
+      </div>
+    </mat-grid-list>
+  </form>
+  <div class="_button">
+    <button mat-raised-button (click)="onSubmit()">Submit</button>
+    <button mat-raised-button mat-dialog-close>Close</button>
+  </div>
+</div>

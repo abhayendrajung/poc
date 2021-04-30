@@ -1,0 +1,28 @@
+<div>
+<h1 class="mainheading">Please enter new Entry !!</h1>
+<form [formGroup] = "service.form ">
+    <mat-grid-list  cols="2" rowHeight="250px">
+      <label>Roll Number</label>  <br>
+      <div class="row">
+          <div class="col-6">
+<input  type="number" formControlName="roll" placeholder="roll number" class="right" required><br>
+<label> Name</label><br>
+<input  type="text" formControlName="name" placeholder="Name" class="right" required><br>
+<label> Maths</label><br>
+<input  type="number" formControlName="maths" placeholder="Maths" class="right" required><br></div>
+<div class="col-6">
+<label >English</label><br>
+<input  type="number" formControlName="english" placeholder="English" class="left" required><br>
+<label> Date</label><br>
+<input  type="date" formControlName="date" placeholder="Date" class="left" required><br>
+</div>
+</div>
+    </mat-grid-list>
+<div class="_button">
+    <button mat-raised-button [disabled]=!service.form.valid (click)="onSubmit()">Submit</button>
+<button mat-raised-button mat-dialog-close >Close </button>
+</div>
+</form>
+
+</div>
+
